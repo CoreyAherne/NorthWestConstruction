@@ -1,6 +1,5 @@
 {
   "name": "Northwest Construction Capstone",
-  "projectId": "f020e3c9-9914-476c-a630-9c386f033921",
   "description": "Robotic Enterprise Framework",
   "main": "Main.xaml",
   "dependencies": {
@@ -11,7 +10,7 @@
     "UiPath.PDF.Activities": "[3.16.0]",
     "UiPath.System.Activities": "[24.3.0]",
     "UiPath.Testing.Activities": "[24.2.0-preview]",
-    "UiPath.UIAutomation.Activities": "[21.10.1]"
+    "UiPath.UIAutomation.Activities": "[23.10.11]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -90,7 +89,7 @@
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
       }
     ],
-    "saveToCloud": false
+    "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
