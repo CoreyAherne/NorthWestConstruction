@@ -3,6 +3,7 @@
   "description": "This process will implement the UiPath Action Centre into the NorthWest Project by mean of uplaoding the invoices for the Document understadning to extract the data for tasks to be created for the bot",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.DocumentUnderstanding.Activities": "[2.4.2]",
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.FormActivityLibrary": "[2.0.2]",
     "UiPath.Persistence.Activities": "[1.5.5]",
