@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="BusinessProcess" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisad1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisad2="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisaseib="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.Invoices.Bundle;assembly=ExtendedExtractionRe.mv7FF4aWETP1i2RTNJzeWJ1" xmlns:upaf="clr-namespace:UiPath.Persistence.Activities.FormTask;assembly=UiPath.Persistence.Activities" xmlns:upamt="clr-namespace:UiPath.Persistence.Activities.Model.Task;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="BusinessProcess" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisad1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisad2="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisaseib="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.Invoices.Bundle;assembly=ExtendedExtractionRe.mv7FF4aWETP1i2RTNJzeWJ1" xmlns:upaf="clr-namespace:UiPath.Persistence.Activities.FormTask;assembly=UiPath.Persistence.Activities" xmlns:upamt="clr-namespace:UiPath.Persistence.Activities.Model.Task;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="out_TaskList" Type="OutArgument(scg:List(uisad:CreatedValidationAction(uisaseib:Invoices)))" />
@@ -200,6 +200,7 @@
       <x:String>UiPath.DocumentProcessing.Contracts.Actions</x:String>
       <x:String>UiPath.DocumentProcessing.Contracts.Taxonomy</x:String>
       <x:String>UiPath.IntelligentOCR.Activities</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -308,7 +309,7 @@
           <av:Size x:Key="ShapeSize">200,81</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Extract Document Data" sap:VirtualizedContainerService.HintSize="648,2545" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence DisplayName="Extract Document Data" sap:VirtualizedContainerService.HintSize="648,2726" sap2010:WorkflowViewState.IdRef="Sequence_1">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="pFiles" />
           <Variable x:TypeArguments="s:String[]" Name="pFilePaths" />
@@ -319,9 +320,9 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Getting files from &quot; + in_config(&quot;NetworkFolder&quot;).ToString]" />
-        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="586,2253" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="586,2434" sap2010:WorkflowViewState.IdRef="TryCatch_1">
           <TryCatch.Try>
-            <Sequence sap:VirtualizedContainerService.HintSize="548,2025" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence sap:VirtualizedContainerService.HintSize="548,2206" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -335,13 +336,13 @@
                   <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(in_Config("NetworkFolder").ToString)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="486,1792" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[pFilePaths]">
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="486,1973" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[pFilePaths]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:String">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:String" Name="currentFile" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,1606" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,1787" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="pFile" />
                         <Variable x:TypeArguments="uisad1:IDocumentData(uisaseib:Invoices)" Name="pDocumentData" />
@@ -358,9 +359,9 @@
                           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                         </p:ClassifyDocument.GptPromptWithVariables>
                       </p:ClassifyDocument>
-                      <If Condition="[pDocumentClassified.DocumentType.Name = &quot;Invoice&quot;]" sap:VirtualizedContainerService.HintSize="410,990" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If Condition="[pDocumentClassified.DocumentType.Name = &quot;Invoice&quot;]" sap:VirtualizedContainerService.HintSize="410,1171" sap2010:WorkflowViewState.IdRef="If_1">
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="376,579" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,760" sap2010:WorkflowViewState.IdRef="Sequence_4">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="uisad:CreatedValidationAction(uisaseib:Invoices)" Name="pTask" />
                             </Sequence.Variables>
@@ -380,6 +381,13 @@
                               </p:ExtractDocumentDataWithDocumentData.GptPromptWithVariables>
                             </p:ExtractDocumentDataWithDocumentData>
                             <uisad:CreateValidationAction x:TypeArguments="uisaseib:Invoices" BucketId="{x:Null}" BucketName="{x:Null}" ContainsDocument="{x:Null}" ContainsTaxonomy="{x:Null}" FieldsValidationConfidence="{x:Null}" OrchestratorFolderId="{x:Null}" OriginalFilePath="{x:Null}" ActionCatalogue="default_du_actions" ActionPriority="Medium" ActionTitle="[&quot;Validate data from &quot; + currentFile.ToString]" AutomaticExtractionResults="[pDocumentData]" CreatedValidationAction="[pTask]" DisplayName="Create Validation Task" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="CreateValidationAction`1_1" OrchestratorBucketName="du_storage_bucket" OrchestratorFolderName="corey.aherne@schoolofautomation.tech's workspace" />
+                            <uasc:AppendItemToCollection x:TypeArguments="uisad:CreatedValidationAction(uisaseib:Invoices)" Collection="[out_TaskList]" DisplayName="Append items to collection" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
+                              <uasc:AppendItemToCollection.Items>
+                                <scg:List x:TypeArguments="InArgument(uisad:CreatedValidationAction(uisaseib:Invoices))" Capacity="4">
+                                  <InArgument x:TypeArguments="uisad:CreatedValidationAction(uisaseib:Invoices)">[pTask]</InArgument>
+                                </scg:List>
+                              </uasc:AppendItemToCollection.Items>
+                            </uasc:AppendItemToCollection>
                           </Sequence>
                         </If.Then>
                         <If.Else>

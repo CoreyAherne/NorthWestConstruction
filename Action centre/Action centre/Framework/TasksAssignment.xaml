@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TasksAssignment" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upaf="clr-namespace:UiPath.Persistence.Activities.FormTask;assembly=UiPath.Persistence.Activities" xmlns:upat="clr-namespace:UiPath.Persistence.Activities.Tasks;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TasksAssignment" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisaseib="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.Invoices.Bundle;assembly=ExtendedExtractionRe.mv7FF4aWETP1i2RTNJzeWJ1" xmlns:upat="clr-namespace:UiPath.Persistence.Activities.Tasks;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_TaskList" Type="InArgument(scg:List(upaf:FormTaskData))" />
+    <x:Property Name="in_TaskList" Type="InArgument(scg:List(uisad:CreatedValidationAction(uisaseib:Invoices)))" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1234,1045</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,1061</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TasksAssignment_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -39,6 +39,9 @@
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.Invoices.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -71,9 +74,14 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>ExtendedExtractionRe.mv7FF4aWETP1i2RTNJzeWJ1</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Tasks Assignment" sap:VirtualizedContainerService.HintSize="450,980" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Tasks Assignment" sap:VirtualizedContainerService.HintSize="450,996" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(upat:TaskUserAssignment)" Name="TaskUserAssignmentList" />
       <Variable x:TypeArguments="scg:List(upat:TaskAssignmentResponse)" Name="FailedTaskAssignments" />
@@ -87,8 +95,12 @@
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  If you have specific task assignment requirement. Remove below code and add your custom code for assignment." />
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Evaluate assignment rules for each task and decide assignment user." DisplayName="Invoke EvaluateTaskAssignmentRule Workflow" sap:VirtualizedContainerService.HintSize="388,155" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\EvaluateTaskAssignmentRule.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="scg:List(upaf:FormTaskData)" x:Key="in_TaskList">[in_TaskList]</InArgument>
-        <OutArgument x:TypeArguments="scg:List(upat:TaskUserAssignment)" x:Key="out_TaskUserAssignmentList">[TaskUserAssignmentList]</OutArgument>
+        <InArgument x:TypeArguments="scg:List(uisad:CreatedValidationAction(uisaseib:Invoices))" x:Key="in_TaskList">
+          <VisualBasicValue x:TypeArguments="scg:List(uisad:CreatedValidationAction(uisaseib:Invoices))" ExpressionText="in_TaskList" />
+        </InArgument>
+        <OutArgument x:TypeArguments="scg:List(upat:TaskUserAssignment)" x:Key="out_TaskUserAssignmentList">
+          <VisualBasicReference x:TypeArguments="scg:List(upat:TaskUserAssignment)" ExpressionText="TaskUserAssignmentList" />
+        </OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -96,7 +108,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <upat:AssignTasks TimeoutMs="{x:Null}" DisplayName="Assign tasks" FailedTaskAssignments="[FailedTaskAssignments]" sap:VirtualizedContainerService.HintSize="388,222" sap2010:WorkflowViewState.IdRef="AssignTasks_1" TaskAssignmentType="[TaskAssignmentType.Assign]" TaskUserAssignments="[TaskUserAssignmentList]">
+    <upat:AssignTasks TaskId="{x:Null}" TimeoutMs="{x:Null}" UserNameOrEmail="{x:Null}" DisplayName="Assign tasks" EnableMultipleAssignments="False" FailedTaskAssignments="[FailedTaskAssignments]" sap:VirtualizedContainerService.HintSize="388,238" sap2010:WorkflowViewState.IdRef="AssignTasks_1" MigrateV144="False" TaskAssignmentType="[TaskAssignmentType.Assign]" TaskUserAssignments="[TaskUserAssignmentList]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
