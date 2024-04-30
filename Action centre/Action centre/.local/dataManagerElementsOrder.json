@@ -32,6 +32,12 @@
       "Path": "Framework/BusinessProcess.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "pTask&Sequence_4",
+        "pDocumentClassified&Sequence_3",
+        "pDocumentData&Sequence_3",
+        "pFile&Sequence_3",
+        "pFilePaths&Sequence_1",
+        "pFiles&Sequence_1",
         "CreateTask&Flowchart_1",
         "TaskTitle&Flowchart_1",
         "TaskCatalog&Flowchart_1",
@@ -45,7 +51,9 @@
         "out_TaskList"
       ],
       "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
+      "AddedNamespaces": [
+        "UiPath.DocumentUnderstanding.Contracts"
+      ]
     },
     {
       "Path": "BusinessProcess/StartBusinessProcessing.xaml",
@@ -69,6 +77,19 @@
       "ArgumentsSectionElementsOrder": [
         "in_TaskList",
         "out_TaskUserAssignmentList"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/TasksAssignment.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TaskUserAssignmentList&Sequence_1",
+        "FailedTaskAssignments&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TaskList"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

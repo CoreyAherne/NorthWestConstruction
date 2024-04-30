@@ -45,6 +45,55 @@
       <x:String>UiPath.Persistence.Activities.FormTask</x:String>
       <x:String>UiPath.Persistence.Activities.Job</x:String>
       <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
+      <x:String>UiPath.SmartData.Telemetry</x:String>
+      <x:String>UiPath.SmartData.Telemetry.Shared</x:String>
+      <x:String>UiPath.SmartData.Telemetry.Events</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>UiPath.Orchestrator.Client</x:String>
+      <x:String>UiPath.Orchestrator.Client.Models</x:String>
+      <x:String>UiPath.DU.Integration</x:String>
+      <x:String>UiPath.DU.Integration.Projects</x:String>
+      <x:String>UiPath.DU.Integration.Extensions</x:String>
+      <x:String>UiPath.DU.Integration.Orchestrator</x:String>
+      <x:String>UiPath.DU.Integration.MlSkills</x:String>
+      <x:String>UiPath.DU.Integration.Datasets</x:String>
+      <x:String>UiPath.DU.Integration.AiFabric</x:String>
+      <x:String>UiPath.DU.AiFabricClient</x:String>
+      <x:String>UiPath.DU.AiFabricClient.Model</x:String>
+      <x:String>UiPath.DU.Shared.DiscoveryClient</x:String>
+      <x:String>UiPath.DU.Shared.Utils</x:String>
+      <x:String>UiPath.Shared</x:String>
+      <x:String>UiPath.Shared.Text</x:String>
+      <x:String>UiPath.Shared.Attributes</x:String>
+      <x:String>UiPath.IntelligentOCR.Properties</x:String>
+      <x:String>UiPath.IntelligentOCR.Logging</x:String>
+      <x:String>UiPath.IntelligentOCR.Helpers</x:String>
+      <x:String>UiPath.IntelligentOCR.Exceptions</x:String>
+      <x:String>UiPath.IntelligentOCR.DataExtraction</x:String>
+      <x:String>UiPath.IntelligentOCR.Utils</x:String>
+      <x:String>UiPath.IntelligentOCR.Actions</x:String>
+      <x:String>UiPath.IntelligentOCR.Actions.Utils</x:String>
+      <x:String>UiPath.IntelligentOCR.Actions.Models</x:String>
+      <x:String>UiPath.IntelligentOCR.Actions.Abstractions</x:String>
+      <x:String>UiPath.DocumentUnderstanding.Persistence</x:String>
+      <x:String>UiPath.DocumentUnderstanding.Persistence.Properties</x:String>
+      <x:String>UiPath.DocumentUnderstanding.Persistence.Extensions</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.DU.Shared.DuAppClient</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.Utils</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.Telemetry</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.Properties</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.SetPDFPassword</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.MergePDFs</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.GetPDFPageCount</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFText</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFPageRange</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFImages</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -85,6 +134,21 @@
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.SmartData.Telemetry</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Telemetry</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.Persistence</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML</AssemblyReference>
+      <AssemblyReference>UiPath.OrchestratorClient</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Flowchart sap2010:Annotation.AnnotationText="[Northwest]&#xA;[This proccess will get new incvoices from outlook and upload them to the Document undertsadning for extraction. of which when the task is approved it will get the extracted data from action centre and continue]&#xA;[Additional information (e.g., author, contact information and applications involved and required external setup)]" DisplayName="Orchestration Process" sap:VirtualizedContainerService.HintSize="634,971" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -116,7 +180,7 @@
           <av:PointCollection x:Key="ConnectorLocation">300,268 300,323.666666666667</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Read configuration file and initialize, populate a config dictionary." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="450,255" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence sap2010:Annotation.AnnotationText="Read configuration file and initialize, populate a config dictionary." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="200,138" sap2010:WorkflowViewState.IdRef="Sequence_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
