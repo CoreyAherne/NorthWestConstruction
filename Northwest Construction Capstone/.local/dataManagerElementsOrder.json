@@ -12,11 +12,11 @@
       "Path": "EmailProcessing.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "pFolder&Sequence_11",
+        "pCompanyName&Sequence_12",
         "pNewEmails&Sequence_1",
         "pEmailAccount&Sequence_1",
-        "pDrive&Sequence_1",
-        "pFolder&Sequence_3",
-        "pCompanyName&Sequence_7"
+        "pDrive&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_Config"
