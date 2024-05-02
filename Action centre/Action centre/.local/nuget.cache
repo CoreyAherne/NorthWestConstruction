@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MaiAWK4UTvlNBSuD2APBH1Ofgq3vlhtfEo9Ska8CcSpUydHWh3VE3uxYWoGk3rS5yUU1wtuBfxLYxkO2kJohSQ==",
+  "dgSpecHash": "pMXedqVZe8KzYFNDVWqqPpDfdfR7PDWKaVQfoCnnahX7k4ruL5uMYgCX7CeNObLHXCnItzHXx70xcBSO0DS9SA==",
   "success": true,
   "projectFilePath": "D:\\NorthWest Construction\\Action centre\\Action centre\\.local\\",
   "expectedPackageFiles": [
@@ -274,6 +274,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.7\\uipath.formactivitylibrary.contracts.2.0.7.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\uipath.integration.api.client\\1.172.8\\uipath.integration.api.client.1.172.8.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\uipath.intelligentocr.activities\\6.19.0\\uipath.intelligentocr.activities.6.19.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\uipath.mlservices.activities\\2.0.1\\uipath.mlservices.activities.2.0.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\3.20.2\\uipath.ocr.activities.3.20.2.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\uipath.ocr.contracts.2.16.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.1.3\\uipath.opentelemetry.contracts.2.1.3.nupkg.sha512",

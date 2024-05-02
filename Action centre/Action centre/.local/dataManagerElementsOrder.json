@@ -32,6 +32,8 @@
       "Path": "Framework/BusinessProcess.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "pDocuObjectModel&Sequence_3",
+        "pDocumentText&Sequence_3",
         "pTask&Sequence_4",
         "pDocumentClassified&Sequence_3",
         "pDocumentData&Sequence_3",
@@ -90,6 +92,20 @@
       ],
       "ArgumentsSectionElementsOrder": [
         "in_TaskList"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTaskBatches.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TaskBatch&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TaskList",
+        "out_TaskBatches",
+        "in_TaskBatchSize"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

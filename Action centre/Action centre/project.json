@@ -8,6 +8,7 @@
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.FormActivityLibrary": "[2.0.2]",
     "UiPath.IntelligentOCR.Activities": "[6.19.0]",
+    "UiPath.MLServices.Activities": "[2.0.1]",
     "UiPath.Persistence.Activities": "[1.5.5]",
     "UiPath.System.Activities": "[24.3.1]"
   },
