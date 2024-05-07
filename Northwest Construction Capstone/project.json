@@ -1,21 +1,19 @@
 {
-  "name": "Northwest Construction Capstone",
-  "description": "Robotic Enterprise Framework",
+  "name": "NorthWest Construction Capstone",
+  "description": "Robotic Enterprise Framework to gather and and process invoices to be created on the database for approval",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.23.2-preview]",
-    "UiPath.Mail.Activities": "[1.22.2]",
-    "UiPath.MicrosoftOffice365.Activities": "[2.5.9]",
-    "UiPath.OCR.Activities": "[3.17.2]",
-    "UiPath.PDF.Activities": "[3.16.0]",
-    "UiPath.System.Activities": "[24.3.0]",
-    "UiPath.Testing.Activities": "[24.2.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.10.11]"
+    "UiPath.ComputerVision.LocalServer": "[23.4.0]",
+    "UiPath.Excel.Activities": "[2.23.3-preview]",
+    "UiPath.Mail.Activities": "[1.23.0]",
+    "UiPath.System.Activities": "[24.3.1]",
+    "UiPath.Testing.Activities": "[24.4.0-preview]",
+    "UiPath.UIAutomation.Activities": "[24.4.1-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "24.2.1.0",
+  "studioVersion": "23.4.1.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
@@ -48,54 +46,54 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "b015f85c-b4fb-45c1-b30c-b21a3d993960",
+        "testCaseId": "94f98230-223b-4fc3-98ba-1cda26d5378c",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\GetTransactionDataTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "b351a5ff-dfbf-41f3-b12a-47365c2c8048",
+        "testCaseId": "2aac790b-651d-40d8-901a-7a6edf635780",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "668b854f-57cb-426a-9112-f728a5e38fb2",
+        "testCaseId": "85a45be5-e2c3-451d-86f0-ed64be6b1b40",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\InitAllSettingsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "71153592-da5c-4cf6-a893-9031587f2760",
+        "testCaseId": "b747f66e-40a2-41c2-ba89-0845f52f1950",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\MainTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "5c4e1391-2008-473c-b8f3-ee26fbb0dd9d",
+        "testCaseId": "419c8453-bc58-4e4a-98ce-cec958b2108e",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\ProcessTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "f58ad3a5-8098-42cf-beea-78cb3743e966",
+        "testCaseId": "80cbe8fd-3ea7-4581-a31d-385deb0ee5bc",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
       }
     ],
-    "modernBehavior": false
+    "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "8f0e7d75-bf94-4b3a-b04a-8b7738f4377a",
+      "uniqueId": "bd75b263-e25b-4ba3-b1f7-c09070f92eb4",
       "input": [],
       "output": []
     }

@@ -32,21 +32,10 @@
       "Path": "Framework/BusinessProcess.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "pDocuObjectModel&Sequence_3",
-        "pDocumentText&Sequence_3",
-        "pTask&Sequence_4",
-        "pDocumentClassified&Sequence_3",
-        "pDocumentData&Sequence_3",
-        "pFile&Sequence_3",
-        "pFilePaths&Sequence_1",
-        "pFiles&Sequence_1",
-        "CreateTask&Flowchart_1",
-        "TaskTitle&Flowchart_1",
-        "TaskCatalog&Flowchart_1",
-        "TaskPriority&Flowchart_1",
-        "TaskFolderPath&Flowchart_1",
-        "TaskObj&Flowchart_1",
-        "EndProcessing&Flowchart_1"
+        "StorageBucket&Sequence_3",
+        "Path&Sequence_3",
+        "pfileName&Sequence_3",
+        "pFilePaths&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_Config",

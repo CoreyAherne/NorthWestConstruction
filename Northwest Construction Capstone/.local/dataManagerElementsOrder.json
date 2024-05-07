@@ -9,25 +9,11 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "EmailProcessing.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "pFolder&Sequence_11",
-        "pCompanyName&Sequence_12",
-        "pNewEmails&Sequence_1",
-        "pEmailAccount&Sequence_1",
-        "pDrive&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_Config"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dt_Invoice&Sequence_28",
+        "dt_FilePaths&StateMachine_1",
         "TransactionItem&StateMachine_1",
         "SystemException&StateMachine_1",
         "BusinessException&StateMachine_1",
@@ -38,11 +24,129 @@
         "TransactionField1&StateMachine_1",
         "TransactionID&StateMachine_1",
         "dt_TransactionData&StateMachine_1",
-        "ConsecutiveSystemExceptions&StateMachine_1"
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_OrchestratorQueueName",
         "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlow/EmailProcessing.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "pNewEmails&Sequence_1",
+        "pEmailAccount&Sequence_1",
+        "pDrive&Sequence_1",
+        "pFolder&Sequence_11",
+        "pCompanyName&Sequence_12"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "dt_in_FilePaths",
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "pDataRow&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "dt_Filepaths",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlow/DocumentUnderstanding.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InvoiceTotal&Sequence_1",
+        "InvoiceDate&Sequence_1",
+        "InvoiceNumber&Sequence_1",
+        "Currency&Sequence_1",
+        "Carrier&Sequence_1",
+        "BankAccount&Sequence_1",
+        "VendorAddress&Sequence_1",
+        "PONumber&Sequence_7",
+        "VendorName&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "o_dtInvoice",
+        "in_Config",
+        "in_TransactionItem",
+        "o_dt_Items"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlow/InvoiceCreation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "VendorName&Sequence_1",
+        "PONumber&Sequence_1",
+        "VendorAddress&Sequence_1",
+        "BankAccount&Sequence_1",
+        "Carrier&Sequence_1",
+        "Currency&Sequence_1",
+        "InvoiceNumber&Sequence_1",
+        "InvoiceDate&Sequence_1",
+        "InvoiceTotal&Sequence_1",
+        "PaymentMethod&Sequence_1",
+        "InvoiceType&Sequence_1",
+        "NametoCheck&Sequence_4",
+        "AddresstoCheck&Sequence_4",
+        "NameMatch&Sequence_4",
+        "AddressMatch&Sequence_4",
+        "VendorCode&Sequence_6",
+        "VendorLocation&Sequence_9",
+        "TargetRow&Sequence_9",
+        "VendorRow&Sequence_9",
+        "CurrencytoCheck&Sequence_10",
+        "CarriertoCheck&Sequence_10",
+        "CarrierMatch&Sequence_10",
+        "CurrencyMatch&Sequence_10",
+        "dtPayments&Sequence_15",
+        "CarrierMatch&Sequence_16",
+        "CurrencyMatch&Sequence_17",
+        "IsMaterial&Sequence_21",
+        "RoughTotal&Sequence_21",
+        "TotalSansSign&Sequence_21",
+        "TotaltoCheck&Sequence_21",
+        "TotalMatch&Sequence_21",
+        "POBalance&Sequence_21",
+        "DescExists&Sequence_24",
+        "QTYExists&Sequence_24",
+        "UnitExists&Sequence_24",
+        "PriceExists&Sequence_24"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "dtInvoice",
+        "dtItems"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
