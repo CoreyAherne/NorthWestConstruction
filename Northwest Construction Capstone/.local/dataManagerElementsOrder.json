@@ -84,15 +84,11 @@
       "Path": "WorkFlow/DocumentUnderstanding.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "InvoiceTotal&Sequence_1",
-        "InvoiceDate&Sequence_1",
-        "InvoiceNumber&Sequence_1",
-        "Currency&Sequence_1",
-        "Carrier&Sequence_1",
-        "BankAccount&Sequence_1",
-        "VendorAddress&Sequence_1",
-        "PONumber&Sequence_7",
-        "VendorName&Sequence_7"
+        "pJsonHeader&Sequence_9",
+        "pJsonResponse&Sequence_9",
+        "pJsonStatus&Sequence_9",
+        "pUrl&Sequence_9",
+        "pApiKey&Sequence_9"
       ],
       "ArgumentsSectionElementsOrder": [
         "o_dtInvoice",
@@ -147,6 +143,20 @@
       "ArgumentsSectionElementsOrder": [
         "dtInvoice",
         "dtItems"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "o_dtInvoice&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "o_dt_Invoice"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
