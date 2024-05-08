@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>905.333333333333,982</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1031,886</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Process_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -69,9 +69,11 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="Business Process" sap:VirtualizedContainerService.HintSize="894.4,582.4" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="Business Process" sap:VirtualizedContainerService.HintSize="637,821" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="CreateTask" />
       <Variable x:TypeArguments="x:String" Name="TaskTitle" />
@@ -85,9 +87,10 @@
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
-        <x:Double x:Key="Height">781</x:Double>
-        <av:PointCollection x:Key="ConnectorLocation">294.8,52.1 294.8,82.1 188.2,82.1 188.2,103</av:PointCollection>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <x:Double x:Key="Height">784</x:Double>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 233,77.5 233,103</av:PointCollection>
+        <x:Double x:Key="Width">603</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -97,21 +100,21 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">133,103</av:Point>
-          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">188.2,173.4 188.2,203.4 224.2,203.4 224.2,259</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,170</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">233,273 169,273 169,300</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  If you have specific processing &amp; task creation requirement. Remove below code and add your custom code for  processing &amp; task creation." />
+      <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="200,170" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  If you have specific processing &amp; task creation requirement. Remove below code and add your custom code for  processing &amp; task creation." />
       <FlowStep.Next>
         <FlowStep x:Name="__ReferenceID1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">169,259</av:Point>
-              <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">224.2,329.4 224.2,359.4 255.2,359.4 255.2,384.02</av:PointCollection>
+              <av:Size x:Key="ShapeSize">434,82</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">386,341 386,371 430,371 430,410.02 400,410.02</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="scg:List(upaf:FormTaskData)">[out_TaskList]</OutArgument>
             </Assign.To>
@@ -129,11 +132,11 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">200,384.02</av:Point>
-                  <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">255.2,454.41999999999996 255.2,484.41999999999996 320.641666666667,484.41999999999996 320.641666666667,506.5</av:PointCollection>
+                  <av:Size x:Key="ShapeSize">200,52</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">300,436.02 300,466.02 308.141666666667,466.02 308.141666666667,506.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke StartBusinessProcessing Workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="BusinessProcess\\StartBusinessProcessing.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke StartBusinessProcessing Workflow" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="BusinessProcess\\StartBusinessProcessing.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <OutArgument x:TypeArguments="x:Boolean" x:Key="out_CreateTask">[CreateTask]</OutArgument>
                   <OutArgument x:TypeArguments="x:String" x:Key="out_TaskTitle">[TaskTitle]</OutArgument>
@@ -149,13 +152,13 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
               <FlowStep.Next>
-                <FlowDecision x:Name="__ReferenceID4" Condition="[CreateTask]" DisplayName="CreateTask ?" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                <FlowDecision x:Name="__ReferenceID4" Condition="[CreateTask]" DisplayName="CreateTask ?" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <av:Point x:Key="ShapeLocation">290.641666666667,506.5</av:Point>
-                      <av:Size x:Key="ShapeSize">60,60</av:Size>
-                      <av:PointCollection x:Key="TrueConnector">290.641666666667,536.5 205.2,536.5 205.2,644.02</av:PointCollection>
+                      <av:Size x:Key="ShapeSize">70,87</av:Size>
+                      <av:PointCollection x:Key="TrueConnector">290.641666666667,550 250,550 250,644.02</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <FlowDecision.True>
@@ -163,11 +166,11 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">150,644.02</av:Point>
-                          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">205.2,714.42 205.2,744.42 250,744.42 250,759</av:PointCollection>
+                          <av:Size x:Key="ShapeSize">200,52</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">250,696.02 250,759</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <upaf:CreateFormTask BucketFolderPath="{x:Null}" BucketName="{x:Null}" BulkFormLayout="{x:Null}" DynamicFormPath="{x:Null}" ExternalTag="{x:Null}" Labels="{x:Null}" TimeoutMs="{x:Null}" BulkFormLayoutGuid="d936c1b6-0ac5-45ed-b9a7-816fc843ff34" DisplayName="Create form task" EnableBulkEdit="False" EnableDynamicForms="False" EnableV2="False" FormLayout="%[{&quot;mask&quot;:false,&quot;customClass&quot;:&quot;uipath-button-container&quot;,&quot;tableView&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;type&quot;:&quot;table&quot;,&quot;input&quot;:false,&quot;key&quot;:&quot;key&quot;,&quot;label&quot;:&quot;label&quot;,&quot;rows&quot;:[[{&quot;components&quot;:[{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;tableView&quot;:true}]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]}]],&quot;numRows&quot;:1,&quot;numCols&quot;:6,&quot;reorder&quot;:false}]" FormLayoutGuid="8bbb282e-3705-4a47-adfc-14758dceec20" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="CreateFormTask_1" TaskCatalog="[TaskCatalog]" TaskOutput="[TaskObj]" TaskPriority="[TaskPriority]" TaskTitle="[TaskTitle]">
+                      <upaf:CreateFormTask BucketFolderPath="{x:Null}" BucketName="{x:Null}" BulkFormLayout="{x:Null}" DynamicFormPath="{x:Null}" ExternalTag="{x:Null}" Labels="{x:Null}" TimeoutMs="{x:Null}" BulkFormLayoutGuid="dcf33af2-e5f1-47e4-948a-c706b3e33df6" DisplayName="Create form task" EnableBulkEdit="False" EnableDynamicForms="False" EnableV2="False" FormLayout="%[{&quot;mask&quot;:false,&quot;customClass&quot;:&quot;uipath-button-container&quot;,&quot;tableView&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;type&quot;:&quot;table&quot;,&quot;input&quot;:false,&quot;key&quot;:&quot;key&quot;,&quot;label&quot;:&quot;label&quot;,&quot;rows&quot;:[[{&quot;components&quot;:[{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;tableView&quot;:true}]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]},{&quot;components&quot;:[]}]],&quot;numRows&quot;:1,&quot;numCols&quot;:6,&quot;reorder&quot;:false}]" FormLayoutGuid="45df2205-6e20-41f0-be36-8c0829201ec3" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="CreateFormTask_1" TaskCatalog="[TaskCatalog]" TaskOutput="[TaskObj]" TaskPriority="[TaskPriority]" TaskTitle="[TaskTitle]">
                         <upaf:CreateFormTask.FormData>
                           <scg:Dictionary x:TypeArguments="x:String, Argument" />
                         </upaf:CreateFormTask.FormData>
@@ -182,20 +185,20 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">150,759</av:Point>
-                              <av:Size x:Key="ShapeSize">200,22.4</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">150,770.2 65,770.2 65,566.666666666667</av:PointCollection>
+                              <av:Size x:Key="ShapeSize">200,25</av:Size>
+                              <av:PointCollection x:Key="ConnectorLocation">150,771.5 80.5,771.5 80.5,593.666666666667</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <AddToCollection x:TypeArguments="upaf:FormTaskData" Collection="[out_TaskList]" DisplayName="Add to task list" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="[TaskObj]" />
+                          <AddToCollection x:TypeArguments="upaf:FormTaskData" Collection="[out_TaskList]" DisplayName="Add to task list" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="[TaskObj]" />
                           <FlowStep.Next>
-                            <FlowDecision x:Name="__ReferenceID5" Condition="[EndProcessing]" DisplayName="EndProcessing ?" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+                            <FlowDecision x:Name="__ReferenceID5" Condition="[EndProcessing]" DisplayName="EndProcessing ?" sap:VirtualizedContainerService.HintSize="91,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <av:Point x:Key="ShapeLocation">35,506.666666666667</av:Point>
-                                  <av:Size x:Key="ShapeSize">60,60</av:Size>
+                                  <av:Size x:Key="ShapeSize">91,87</av:Size>
                                   <av:PointCollection x:Key="TrueConnector">300.641666666667,449.833333333333 260,449.833333333333 260,544.02</av:PointCollection>
-                                  <av:PointCollection x:Key="FalseConnector">95,536.666666666667 125,536.666666666667 125,419.21999999999997 200,419.21999999999997</av:PointCollection>
+                                  <av:PointCollection x:Key="FalseConnector">126,550.166666666667 156,550.166666666667 156,410.02 200,410.02</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <FlowDecision.False>

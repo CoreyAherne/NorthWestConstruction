@@ -76,6 +76,56 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitConfig.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "SettingsAndConstants&Sequence_5",
+        "Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/TasksAssignment.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TaskUserAssignmentList&Sequence_1",
+        "FailedTaskAssignments&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TaskList"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/EvaluateTaskAssignmentRule.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TaskList",
+        "out_TaskUserAssignmentList"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/AfterResume.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TaskObj"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

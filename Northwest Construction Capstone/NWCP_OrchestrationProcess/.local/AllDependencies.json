@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {
+    "net6.0-windows7.0": {
       "ClosedXML/0.95.4": {
         "type": "package",
         "dependencies": {
@@ -3176,7 +3176,7 @@
         "type": "package"
       }
     },
-    "net8.0-windows7.0/win-x64": {
+    "net6.0-windows7.0/win10-x64": {
       "ClosedXML/0.95.4": {
         "type": "package",
         "dependencies": {
@@ -10941,26 +10941,27 @@
   },
   "projectFileDependencyGroups": {
     "": [],
-    "net8.0-windows7.0": [
+    "net6.0-windows7.0": [
       "UiPath.Excel.Activities >= 2.23.3-preview <= 2.23.3-preview",
       "UiPath.FormActivityLibrary >= 2.0.7 <= 2.0.7",
+      "UiPath.FormActivityLibrary.Contracts >= 2.0.7 <= 2.0.7",
       "UiPath.Persistence.Activities >= 1.5.5 <= 1.5.5",
       "UiPath.System.Activities >= 24.3.1 <= 24.3.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sebak\\.nuget\\packages\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "NWCP_OrchestrationProcess",
       "projectName": "NWCP_OrchestrationProcess",
-      "projectPath": "C:\\Users\\sebak\\Documents\\UiPath\\NWCP_OrchestrationProcess\\.local",
-      "packagesPath": "C:\\Users\\sebak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sebak\\Documents\\UiPath\\NWCP_OrchestrationProcess\\.local"
+      "projectPath": "D:\\NorthWest Construction\\NorthWest Construction Capstone\\NWCP_OrchestrationProcess\\.local",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "D:\\NorthWest Construction\\NorthWest Construction Capstone\\NWCP_OrchestrationProcess\\.local"
     },
     "frameworks": {
-      "net8.0-windows7.0": {
+      "net6.0-windows7.0": {
         "dependencies": {
           "UiPath.Excel.Activities": {
             "include": "Runtime",
@@ -10968,6 +10969,11 @@
             "version": "[2.23.3-preview, 2.23.3-preview]"
           },
           "UiPath.FormActivityLibrary": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[2.0.7, 2.0.7]"
+          },
+          "UiPath.FormActivityLibrary.Contracts": {
             "include": "Runtime",
             "target": "Package",
             "version": "[2.0.7, 2.0.7]"
@@ -10983,26 +10989,13 @@
             "version": "[24.3.1, 24.3.1]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Dell\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
-      "win-x64": {
+      "win10-x64": {
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "UiPath.Persistence.Activities 1.5.5 depends on UiPath.FormActivityLibrary.Contracts (>= 2.0.7-alpha.4234105) but UiPath.FormActivityLibrary.Contracts 2.0.7-alpha.4234105 was not found. An approximate best match of UiPath.FormActivityLibrary.Contracts 2.0.7 was resolved.",
-      "libraryId": "UiPath.FormActivityLibrary.Contracts",
-      "targetGraphs": [
-        "net8.0-windows7.0",
-        "net8.0-windows7.0/win-x64"
-      ]
-    }
-  ]
+  }
 }
