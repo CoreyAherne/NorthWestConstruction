@@ -151,12 +151,39 @@
       "Path": "Framework/Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "pInvoiceData&Sequence_1",
         "o_dtInvoice&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_TransactionItem",
         "in_Config",
         "o_dt_Invoice"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlow/DocumentReader 3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "doctax_DocumentTaxonomy&Sequence_1",
+        "str_DocText&Sequence_1",
+        "doc_DOM&Sequence_1",
+        "cr_ClassificationResults&Sequence_1",
+        "er_ExtractionResults&Sequence_1",
+        "er_ValidationResult&Sequence_1",
+        "dataset_Result&Sequence_1",
+        "dt_Output&Sequence_1",
+        "str_DocPath&Sequence_1",
+        "str_Items&Sequence_1",
+        "dt_TableFromDataset&Sequence_1",
+        "int_TableRowCounter&Sequence_1",
+        "int_TableColumnCounter&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_dict_Config",
+        "out_dt_DataFromDocuments",
+        "in_str_Document"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
