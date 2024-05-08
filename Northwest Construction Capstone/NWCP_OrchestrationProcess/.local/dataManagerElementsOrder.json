@@ -1,0 +1,81 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Flowchart_1",
+        "TaskList&Flowchart_1",
+        "TaskAction&Flowchart_1",
+        "TaskOutput&Flowchart_1",
+        "TaskBatches&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Invoicescreation",
+        "in_WaitInCurrentProcess",
+        "in_TaskBatchSize",
+        "in_TaskWaitProcessName",
+        "in_AfterResumeStepInCurrentProcess",
+        "in_AfterResumeProcessName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTaskBatches.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TaskBatch&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TaskList",
+        "out_TaskBatches",
+        "in_TaskBatchSize"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/BusinessProcess.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CreateTask&Flowchart_1",
+        "TaskTitle&Flowchart_1",
+        "TaskCatalog&Flowchart_1",
+        "TaskPriority&Flowchart_1",
+        "TaskFolderPath&Flowchart_1",
+        "TaskObj&Flowchart_1",
+        "EndProcessing&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "out_TaskList"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "BusinessProcess/StartBusinessProcessing.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_CreateTask",
+        "out_TaskTitle",
+        "out_TaskCatalog",
+        "out_TaskPriority",
+        "out_TaskFolderPath",
+        "out_EndProcessing"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
