@@ -166,6 +166,7 @@
       "Path": "WorkFlow/DocumentReader 3.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "cr_ValidatedClassification&Sequence_1",
         "er_validatedExtractionResults&Sequence_1",
         "doctax_DocumentTaxonomy&Sequence_1",
         "str_DocText&Sequence_1",
